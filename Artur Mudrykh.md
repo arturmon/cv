@@ -1,6 +1,9 @@
 # Artur Mudrykh
 **Senior SRE/DevOps Engineer**  
-Email: arturmon82@gmail.com | Phone: +357 97 527773 | Location: Larnaca, Cyprus
+Email: arturmon82@gmail.com  
+Phone: +357 97 527773  
+Telegram: @arturmon  
+Location: Larnaca, Cyprus  
 
 ---
 
