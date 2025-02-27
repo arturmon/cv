@@ -70,13 +70,13 @@ A highly skilled and experienced Senior SRE/DevOps Engineer with a strong backgr
 
 ## **Skills**
 
-- **Containerization:** Docker, Kubernetes
+- **Containerization:** Docker, Podman, Kubernetes
 - **CI/CD Tools:** GitLab, TeamCity, Jenkins, ArgoCD, Bitbucket
-- **Cloud Platforms:** (e.g., AWS, GCP, or Azure) - Add specific ones you've used
+- **Cloud Platforms:** AWS, Azure, Selectel (OpenStack)
 - **Infrastructure as Code:** Terraform, Ansible, Helm
 - **Monitoring & Logging:** VictoriaMetrics, Prometheus, Grafana, OpenSearch, Graylog
-- **Messaging & Service Mesh:** Kafka, Linkerd
-- **Scripting & Programming:** Python, Bash, SQL
+- **Messaging & Service Mesh:** Kafka, Kafka-Connector, RabbitMQ, Linkerd, Istio
+- **Scripting & Programming:** Go, Python, Bash, SQL
 - **Version Control & Collaboration:** Git, Bitbucket, Jira, Confluence
 
 ---
