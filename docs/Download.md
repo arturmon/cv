@@ -2,4 +2,4 @@
 
 [📥 Download MD](javascript:downloadMD())
 
-[📄 Download PDF](pdf/)
+[📄 Download PDF](Artur_Mudrykh_CV.pdf)
