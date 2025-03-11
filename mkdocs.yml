@@ -3,8 +3,11 @@ theme:
   name: "material"
 
 nav:
-  - Home: index.md
-  - CV: Artur Mudrykh.md
+  - Home: Artur Mudrykh.md
+  - Download: Download.md
 
 extra_javascript:
   - js/custom.js
+
+markdown_extensions:
+  - attr_list
