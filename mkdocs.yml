@@ -11,3 +11,5 @@ extra_javascript:
 
 markdown_extensions:
   - attr_list
+
+use_directory_urls: false
