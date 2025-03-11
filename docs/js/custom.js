@@ -1,12 +1,12 @@
 async function generatePDF() {
     const { jsPDF } = window.jspdf;
 
-    // Load external libraries dynamically
+    // Load required libraries dynamically
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js");
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js");
 
     try {
-        // Fetch the Markdown file
+        // Fetch Markdown content
         const url = "https://raw.githubusercontent.com/arturmon/cv/main/docs/index.md";
         const response = await fetch(url);
         const markdown = await response.text();
@@ -18,25 +18,36 @@ async function generatePDF() {
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = `
             <style>
-                body { font-family: Arial, sans-serif; font-size: 12px; padding: 20px; }
+                body { font-family: Arial, sans-serif; font-size: 12px; padding: 20px; width: 800px; }
                 h1, h2, h3 { color: #333; }
                 p { line-height: 1.5; }
             </style>
             ${htmlContent}`;
-        tempDiv.style.width = "800px";
         tempDiv.style.backgroundColor = "white";
+        tempDiv.style.padding = "20px";
+        tempDiv.style.width = "800px";
         document.body.appendChild(tempDiv);
 
         // Render the HTML to canvas
-        const canvas = await html2canvas(tempDiv);
+        const canvas = await html2canvas(tempDiv, { scale: 2 });
         const imgData = canvas.toDataURL("image/png");
 
-        // Create a PDF and insert the image
+        // Create a new PDF
         const pdf = new jsPDF("p", "mm", "a4");
         const imgWidth = 210; // A4 width in mm
+        const pageHeight = 297; // A4 height in mm
         const imgHeight = (canvas.height * imgWidth) / canvas.width;
+        let yPosition = 0;
 
-        pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+        // Split the content into multiple pages
+        while (yPosition < imgHeight) {
+            pdf.addImage(imgData, "PNG", 0, -yPosition, imgWidth, imgHeight);
+            yPosition += pageHeight;
+            if (yPosition < imgHeight) {
+                pdf.addPage();
+            }
+        }
+
         pdf.save("Artur_Mudrykh_CV.pdf");
 
         // Remove the temporary container
