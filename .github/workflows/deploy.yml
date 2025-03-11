@@ -21,12 +21,6 @@ jobs:
       - name: Installing dependencies
         run: pip install -r requirements.txt
 
-      - name: Build site with PDF generation
-        run: mkdocs build
-
-      - name: Move generated PDF to site directory
-        run: mv Artur_Mudrykh_CV.pdf site/
-
       - name: Build and deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

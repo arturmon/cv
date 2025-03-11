@@ -7,13 +7,10 @@ nav:
   - Download: Download.md
 
 extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
   - js/custom.js
 
 markdown_extensions:
   - attr_list
 
 use_directory_urls: false
-
-plugins:
-  - with-pdf:
-      output_path: ../Artur_Mudrykh_CV.pdf
