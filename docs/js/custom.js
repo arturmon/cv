@@ -1,5 +1,7 @@
 function generatePDF() {
-    let url = window.location.origin + "/Artur%20Mudrykh.md";
+    const { jsPDF } = window.jspdf;
+    const url = "https://raw.githubusercontent.com/arturmon/cv/refs/heads/main/docs/index.md";
+
     fetch(url)
         .then(response => response.text())
         .then(markdown => {
@@ -7,5 +9,5 @@ function generatePDF() {
             pdf.text(markdown, 10, 10);
             pdf.save("Artur_Mudrykh_CV.pdf");
         })
-        .catch(error => console.error("Loading error MD:", error));
+        .catch(error => console.error("Error:", error));
 }
