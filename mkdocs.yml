@@ -13,3 +13,8 @@ markdown_extensions:
   - attr_list
 
 use_directory_urls: false
+
+plugins:
+  - with-pdf:
+      enable: true
+      filename: "Artur_Mudrykh_CV.pdf"

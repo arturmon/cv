@@ -1,5 +1,5 @@
 # Welcome!
 
-[📥 Download MD](https://raw.githubusercontent.com/arturmon/cv/refs/heads/main/docs/index.md)
+[📥 Download MD](javascript:downloadMD())
 
-[📄 Download PDF](javascript:generatePDF())
+[📄 Download PDF](pdf/)
