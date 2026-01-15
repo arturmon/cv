@@ -2,9 +2,9 @@
 **Senior SRE/DevOps Engineer**  
 Email: arturmon82@gmail.com  
 Phone: +357 97 527773  
-Telegram: @arturmon
-GitHub: github.com/arturmon
-Location: Larnaca, Cyprus
+Telegram: @arturmon  
+GitHub: github.com/arturmon  
+Location: Larnaca, Cyprus  
 
 ---
 
