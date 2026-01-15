@@ -2,8 +2,9 @@
 **Senior SRE/DevOps Engineer**  
 Email: arturmon82@gmail.com  
 Phone: +357 97 527773  
-Telegram: @arturmon  
-Location: Larnaca, Cyprus  
+Telegram: @arturmon
+GitHub: github.com/arturmon
+Location: Larnaca, Cyprus
 
 ---
 
@@ -16,8 +17,17 @@ A highly skilled and experienced Senior SRE/DevOps Engineer with a strong backgr
 ## **Professional Experience**
 
 ### **Senior SRE/DevOps Engineer**  
-**Uzum (Remote)**  
+**Brainsome, Limasol, Cyprus**
 *Dec 2022 – Present*
+
+- Applied IaC architectural solutions to deploy infrastructure in Google Cloud (GKE, GCP, GLB and other service)
+- Production aplication relocation to Google
+- Creating an operator to manage a multi-data center application in Cloud
+- Collaborated closely with development teams to improve deployment workflows, reduce operational risks, and increase platform stability.
+
+### **Senior SRE/DevOps Engineer**  
+**Uzum (Remote)**
+*Dec 2022 – Apr 2025Present*
 
 - Designed and implemented infrastructure as code using Terraform.
 - Set up and maintained CI/CD pipelines using GitLab, TeamCity, and ArgoCD.
@@ -111,3 +121,5 @@ A highly skilled and experienced Senior SRE/DevOps Engineer with a strong backgr
 - Strong problem-solving and analytical skills with a focus on continuous improvement.
 - Excellent communication skills, capable of working in a multicultural team environment.
 - Proficient in documenting processes and monitoring performance metrics.
+- Participation in open-source projects and collaborative software development.
+
