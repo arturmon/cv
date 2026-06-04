@@ -145,4 +145,4 @@ Novouralsk State Technological Institute (NSTI), Russia
 ## Languages
 
 * **English:** Intermediate / Technical
-* **Russian:** Native (Mother tongue)
+* **Russian:** Native
