@@ -7,11 +7,11 @@ Select a language version to download the CV in Markdown (.md) or PDF format:
 ---
 
 ### 🇬🇧 English Version (Английская версия)
-* [📥 Download Markdown (EN)](javascript:downloadMD('en'))
-* [📄 Download PDF (EN)](javascript:generatePDF('en'))
+* <a href="javascript:downloadMD('en')">📥 Download Markdown (EN)</a>
+* <a href="javascript:generatePDF('en')">📄 Download PDF (EN)</a>
 
 ---
 
 ### 🇷🇺 Russian Version (Русская версия)
-* [📥 Download Markdown (RU)](javascript:downloadMD('ru'))
-* [📄 Download PDF (RU)](javascript:generatePDF('ru'))
+* <a href="javascript:downloadMD('ru')">📥 Download Markdown (RU)</a>
+* <a href="javascript:generatePDF('ru')">📄 Download PDF (RU)</a>
