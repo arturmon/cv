@@ -1,4 +1,4 @@
-async function generatePDF() {
+async function generatePDF(lang = 'en') {
     const { jsPDF } = window.jspdf;
 
     // Load required libraries dynamically
@@ -6,8 +6,9 @@ async function generatePDF() {
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js");
 
     try {
-        // Fetch Markdown content
-        const url = "https://raw.githubusercontent.com/arturmon/cv/main/docs/index.md";
+        // Fetch Markdown content based on language
+        const fileName = lang === 'ru' ? 'index_ru.md' : 'index.md';
+        const url = `https://raw.githubusercontent.com/arturmon/cv/main/docs/${fileName}`;
         const response = await fetch(url);
         const markdown = await response.text();
 
@@ -48,7 +49,8 @@ async function generatePDF() {
             }
         }
 
-        pdf.save("Artur_Mudrykh_CV.pdf");
+        const pdfName = lang === 'ru' ? "Artur_Mudrykh_CV_RU.pdf" : "Artur_Mudrykh_CV.pdf";
+        pdf.save(pdfName);
 
         // Remove the temporary container
         document.body.removeChild(tempDiv);
@@ -57,15 +59,17 @@ async function generatePDF() {
     }
 }
 
-function downloadMD() {
-    const url = "https://raw.githubusercontent.com/arturmon/cv/refs/heads/main/docs/index.md";
+function downloadMD(lang = 'en') {
+    const fileName = lang === 'ru' ? 'index_ru.md' : 'index.md';
+    const url = `https://raw.githubusercontent.com/arturmon/cv/refs/heads/main/docs/${fileName}`;
     fetch(url)
         .then(response => response.text())
         .then(content => {
             const blob = new Blob([content], { type: "text/markdown" });
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = "Artur_Mudrykh_CV.md"; // Specify the file name
+            const mdName = lang === 'ru' ? "Artur_Mudrykh_CV_RU.md" : "Artur_Mudrykh_CV.md";
+            link.download = mdName; // Specify the file name
             link.click();
         })
         .catch(error => console.error("Error downloading MD:", error));

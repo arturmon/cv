@@ -1,5 +1,17 @@
-# Downloads CV
+# Download CV / Скачать резюме
 
-[📥 Download MD](javascript:downloadMD())
+Select a language version to download the CV in Markdown (.md) or PDF format:
 
-[📄 Download PDF](javascript:generatePDF())
+Выберите языковую версию для скачивания резюме в формате Markdown (.md) или PDF:
+
+---
+
+### 🇬🇧 English Version (Английская версия)
+* [📥 Download Markdown (EN)](javascript:downloadMD('en'))
+* [📄 Download PDF (EN)](javascript:generatePDF('en'))
+
+---
+
+### 🇷🇺 Russian Version (Русская версия)
+* [📥 Download Markdown (RU)](javascript:downloadMD('ru'))
+* [📄 Download PDF (RU)](javascript:generatePDF('ru'))

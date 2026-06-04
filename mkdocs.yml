@@ -3,8 +3,9 @@ theme:
   name: "material"
 
 nav:
-  - Home: index.md
-  - Download: Download.md
+  - Resume (EN): index.md
+  - Резюме (RU): index_ru.md
+  - Download / Загрузка: Download.md
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js

@@ -1,2 +1,5 @@
 # idea confDB
 .idea
+
+# MkDocs build directory
+site/
