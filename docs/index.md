@@ -38,7 +38,7 @@ I actively write clean, maintainable code in Go to develop custom Kubernetes ope
 ## Professional Experience
 
 ### Brainsome — Senior SRE / DevOps Engineer
-Larnaca, Cyprus (Hybrid) | Dec 2022 – Present
+Larnaca, Cyprus (Hybrid) | Apr 2025 – Present
 
 *Brainsome is a technology company building scalable web platforms and digital products.*
 
